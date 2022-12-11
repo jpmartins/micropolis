@@ -17,6 +17,7 @@ import javax.swing.*;
 import micropolisj.engine.*;
 import static micropolisj.gui.MainWindow.formatFunds;
 
+@SuppressWarnings("serial")
 public class EvaluationPane extends JPanel
 	implements Micropolis.Listener
 {

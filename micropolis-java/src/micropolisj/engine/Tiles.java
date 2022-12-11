@@ -33,8 +33,6 @@ public class Tiles
 	static void readTiles()
 		throws IOException
 	{
-		ArrayList<TileSpec> tilesList = new ArrayList<TileSpec>();
-
 		Properties tilesRc = new Properties();
 		tilesRc.load(
 			new InputStreamReader(

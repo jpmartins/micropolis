@@ -13,8 +13,9 @@ import java.awt.event.*;
 import java.io.*;
 import java.util.*;
 import javax.swing.*;
-import javax.swing.table.*;
+import micropolisj.engine.Micropolis;
 
+@SuppressWarnings("serial")
 public class TranslationTool extends JFrame
 {
 	JTable stringsTable;
@@ -98,7 +99,7 @@ public class TranslationTool extends JFrame
 	{
 		try{
 
-		Class mclass = micropolisj.engine.Micropolis.class;
+		Class<Micropolis> mclass = micropolisj.engine.Micropolis.class;
 		return new File(
 			mclass.getProtectionDomain()
 				.getCodeSource().getLocation().toURI().getPath()
@@ -301,9 +302,9 @@ public class TranslationTool extends JFrame
 		msg = msg + "Your translated strings have been saved to\n";
 		msg = msg + new File(stringsModel.workingDirectory, "micropolisj").toString() + "\n";
 		msg = msg + "as:\n";
-		for (int i = 0; i < stringsModel.FILES.length; i++) {
+		for (int i = 0; i < StringsModel.FILES.length; i++) {
 			msg = msg + " * "
-				+ stringsModel.FILES[i]+"_"+code+".properties"
+				+ StringsModel.FILES[i]+"_"+code+".properties"
 				+ "\n";
 		}
 		msg = msg + "\n";

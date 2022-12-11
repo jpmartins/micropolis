@@ -14,6 +14,7 @@ import javax.swing.text.*;
 
 import micropolisj.engine.*;
 
+@SuppressWarnings("serial")
 public class MessagesPane extends JTextPane
 {
 	static ResourceBundle cityMessageStrings = ResourceBundle.getBundle("micropolisj.CityMessages");

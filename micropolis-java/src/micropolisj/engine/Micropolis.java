@@ -94,7 +94,7 @@ public class Micropolis
 	static final int DEFAULT_WIDTH = 120;
 	static final int DEFAULT_HEIGHT = 100;
 
-	public final CityBudget budget = new CityBudget(this);
+	public final CityBudget budget = new CityBudget();
 	public boolean autoBulldoze = true;
 	public boolean autoBudget = false;
 	public Speed simSpeed = Speed.NORMAL;
@@ -2415,8 +2415,6 @@ public class Micropolis
 		assert dim != null;
 		assert dim.width >= 3;
 		assert dim.height >= 3;
-
-		int zoneBase = (zoneTile&LOMASK) - 1 - dim.width;
 
 		// this will take care of stopping smoke animations
 		shutdownZone(xpos, ypos, dim);

@@ -9,6 +9,8 @@
 package micropolisj;
 
 import javax.swing.*;
+//import javafx.application.Platform;
+//import javafx.embed.swing.JFXPanel;
 
 import micropolisj.gui.MainWindow;
 
@@ -27,5 +29,10 @@ public class Main
 		public void run() {
 			createAndShowGUI();
 		}});
+		/*new JFXPanel(); // this will prepare JavaFX toolkit and environment
+		Platform.runLater(new Runnable() {
+		public void run() {
+			createAndShowGUI();
+		}});*/
 	}
 }

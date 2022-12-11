@@ -18,6 +18,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import micropolisj.engine.*;
 import static micropolisj.gui.MainWindow.EXTENSION;
 
+@SuppressWarnings("serial")
 public class NewCityDialog extends JDialog
 {
 	Micropolis engine;

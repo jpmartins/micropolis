@@ -8,8 +8,6 @@
 
 package micropolisj.engine;
 
-import static micropolisj.engine.TileConstants.*;
-
 /**
  * Enumerates the various tools that can be applied to the map by the user.
  * Call the tool's apply() method to actually use the tool on the map.

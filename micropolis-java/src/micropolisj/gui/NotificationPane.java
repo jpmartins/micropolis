@@ -16,6 +16,7 @@ import javax.swing.*;
 import micropolisj.engine.*;
 import static micropolisj.gui.ColorParser.parseColor;
 
+@SuppressWarnings("serial")
 public class NotificationPane extends JPanel
 {
 	JLabel headerLbl;

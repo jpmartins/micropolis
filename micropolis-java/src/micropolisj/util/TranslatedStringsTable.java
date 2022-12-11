@@ -8,10 +8,10 @@
 
 package micropolisj.util;
 
-import java.awt.*;
 import javax.swing.*;
 import javax.swing.table.*;
 
+@SuppressWarnings("serial")
 public class TranslatedStringsTable extends JTable
 {
 	public TranslatedStringsTable(TableModel tm)

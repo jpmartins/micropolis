@@ -8,8 +8,6 @@
 
 package micropolisj.engine;
 
-import java.util.*;
-
 import static micropolisj.engine.TileConstants.*;
 import static micropolisj.engine.TrafficGen.ZoneType;
 
@@ -182,6 +180,7 @@ class MapScanner extends TileBehavior
 	void doCoalPower()
 	{
 		boolean powerOn = checkZonePower();
+		System.out.println("powerOn:"+powerOn);
 		city.coalCount++;
 		if ((city.cityTime % 8) == 0) {
 			repairZone(POWERPLANT, 4);
@@ -193,7 +192,8 @@ class MapScanner extends TileBehavior
 	void doNuclearPower()
 	{
 		boolean powerOn = checkZonePower();
-		if (!city.noDisasters && PRNG.nextInt(city.MltdwnTab[city.gameLevel]+1) == 0) {
+		System.out.println("powerOn:"+powerOn);
+		if (!city.noDisasters && PRNG.nextInt(Micropolis.MltdwnTab[city.gameLevel]+1) == 0) {
 			city.doMeltdown(xpos, ypos);
 			return;
 		}
@@ -275,6 +275,7 @@ class MapScanner extends TileBehavior
 	void doStadiumFull()
 	{
 		boolean powerOn = checkZonePower();
+		System.out.println("powerOn:"+powerOn);
 		city.stadiumCount++;
 		if (((city.cityTime + xpos + ypos) % 8) == 0) {
 			drawStadium(STADIUM);
@@ -340,6 +341,7 @@ class MapScanner extends TileBehavior
 	void doHospitalChurch()
 	{
 		boolean powerOn = checkZonePower();
+		System.out.println("powerOn:"+powerOn);
 		if (tile == HOSPITAL)
 		{
 			city.hospitalCount++;

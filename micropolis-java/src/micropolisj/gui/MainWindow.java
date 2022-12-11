@@ -14,7 +14,6 @@ import java.io.*;
 import java.net.URL;
 import java.text.MessageFormat;
 import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.prefs.*;
 import javax.sound.sampled.*;
@@ -25,6 +24,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import micropolisj.engine.*;
 import micropolisj.util.TranslationTool;
 
+@SuppressWarnings("serial")
 public class MainWindow extends JFrame
 	implements Micropolis.Listener, EarthquakeListener
 {

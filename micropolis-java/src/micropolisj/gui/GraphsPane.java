@@ -11,13 +11,13 @@ package micropolisj.gui;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.Path2D;
-import java.text.*;
 import java.util.*;
 import javax.swing.*;
 
 import micropolisj.engine.*;
 import static micropolisj.gui.ColorParser.parseColor;
 
+@SuppressWarnings("serial")
 public class GraphsPane extends JPanel
 	implements Micropolis.Listener
 {

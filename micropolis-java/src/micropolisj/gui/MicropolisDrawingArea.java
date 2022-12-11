@@ -10,8 +10,6 @@ package micropolisj.gui;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.image.*;
-import java.net.URL;
 import java.util.*;
 import javax.swing.*;
 import javax.swing.event.*;
@@ -21,6 +19,7 @@ import micropolisj.engine.*;
 import static micropolisj.engine.TileConstants.*;
 import static micropolisj.gui.ColorParser.parseColor;
 
+@SuppressWarnings("serial")
 public class MicropolisDrawingArea extends JComponent
 	implements Scrollable, MapListener
 {
@@ -36,7 +35,7 @@ public class MicropolisDrawingArea extends JComponent
 	static final Dimension PREFERRED_VIEWPORT_SIZE = new Dimension(640,640);
 	static final ResourceBundle strings = MainWindow.strings;
 
-	static final int DEFAULT_TILE_SIZE = 16;
+	static final int DEFAULT_TILE_SIZE = 8;
 	TileImages tileImages;
 	int TILE_WIDTH;
 	int TILE_HEIGHT;

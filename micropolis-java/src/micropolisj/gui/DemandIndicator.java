@@ -15,6 +15,7 @@ import javax.swing.*;
 
 import micropolisj.engine.*;
 
+@SuppressWarnings("serial")
 public class DemandIndicator extends JComponent
 	implements Micropolis.Listener
 {

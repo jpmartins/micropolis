@@ -12,6 +12,7 @@ import java.io.*;
 import java.util.*;
 import javax.swing.table.*;
 
+@SuppressWarnings("serial")
 class StringsModel extends AbstractTableModel
 {
 	StringInfo [] strings;
@@ -103,7 +104,7 @@ class StringsModel extends AbstractTableModel
 	}
 
 	@Override
-	public Class getColumnClass(int col)
+	public Class<String> getColumnClass(int col)
 	{
 		return String.class;
 	}

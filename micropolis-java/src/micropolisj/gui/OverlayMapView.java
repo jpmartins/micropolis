@@ -19,6 +19,7 @@ import javax.swing.event.*;
 import micropolisj.engine.*;
 import static micropolisj.engine.TileConstants.*;
 
+@SuppressWarnings("serial")
 public class OverlayMapView extends JComponent
 	implements Scrollable, MapListener
 {

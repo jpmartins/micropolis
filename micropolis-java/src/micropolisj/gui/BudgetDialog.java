@@ -12,13 +12,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
-import java.text.NumberFormat;
 import java.util.*;
 
 import micropolisj.engine.*;
 import static micropolisj.gui.MainWindow.formatFunds;
 import static micropolisj.gui.MainWindow.formatGameDate;
 
+@SuppressWarnings("serial")
 public class BudgetDialog extends JDialog
 {
 	Micropolis engine;

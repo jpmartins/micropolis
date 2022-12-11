@@ -101,7 +101,6 @@ public abstract class Sprite
 
 		dispX = Math.abs(dispX);
 		dispY = Math.abs(dispY);
-		int absDist = dispX + dispY;
 
 		if (dispX * 2 < dispY)      z++;
 		else if (dispY * 2 < dispX) z--;
@@ -126,6 +125,7 @@ public abstract class Sprite
 	/**
 	 * Replaces this sprite with an exploding sprite.
 	 */
+	@SuppressWarnings("incomplete-switch")
 	final void explodeSprite()
 	{
 		this.frame = 0;
